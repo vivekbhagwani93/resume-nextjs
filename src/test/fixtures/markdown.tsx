@@ -30,6 +30,8 @@ export const personalInformation: CMSPersonalInformation = {
     familyName: 'Body',
     givenName: 'Some',
     title: 'Cool Person',
+    phone: '+12 3456 7890 12',
+    email: 'abc@d.ef',
     location: 'Somewhere Only We Know',
   },
   html: '<div>Test</div>',
