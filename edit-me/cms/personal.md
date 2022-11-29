@@ -1,9 +1,15 @@
 ---
-location: Placeholder, TX
-familyName: Body
-givenName: Some
-title: Official Job Title
-twitterUsername: some_body
+location: Pune, Maharashtra, India
+phone: +918275533156
+email: vivekbhagwani93@gmail.com
+familyName: Bhagwani
+givenName: Vivek
+title: Senior JavaScript Engineer (UI/UX)
+twitterUsername: vivekbhagwani93
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Neque viverra justo nec ultrices. Urna nunc id cursus metus aliquam eleifend mi in nulla. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.
+Frontend JavaScript Software Engineer with 7 years of experience in high-energy tech startups and MNCs;
+
+Keen on solving problems from scratch with technology
+
+Learning and Mentorship enthusiast

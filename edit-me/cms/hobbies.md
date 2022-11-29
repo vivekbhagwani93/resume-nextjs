@@ -1,3 +1,8 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Neque viverra justo nec ultrices. Urna nunc id cursus metus aliquam eleifend mi in nulla. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.
+Sports - 
+**Soccer, Badminton, Chess, Table Tennis**
 
-All Markdown files will be rendered as rich text, so you can include features such as [links](#).
+Content - 
+**Sci-fi, Thriller, Comedy, Horror, Romance**
+
+Music - 
+**Pop, Regional, Rap, Instrumental**

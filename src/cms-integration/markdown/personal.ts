@@ -6,6 +6,8 @@ import invariant from 'tiny-invariant';
 
 export interface PersonalMarkdownAttributes {
   location: string;
+  phone: string;
+  email: string;
   familyName: string;
   givenName: string;
   title?: string;

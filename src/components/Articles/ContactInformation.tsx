@@ -28,6 +28,18 @@ const ContactInformation: React.FC<ContactInformationProps> = (props) => {
             </Column>
             <Column>{personalInformation.attributes.location}</Column>
           </Row>
+          <Row>
+            <Column width={{ xs: 'auto' }}>
+              <strong>Phone:</strong>
+            </Column>
+            <Column>{personalInformation.attributes.phone}</Column>
+          </Row>
+          <Row>
+            <Column width={{ xs: 'auto' }}>
+              <strong>Email:</strong>
+            </Column>
+            <Column>{personalInformation.attributes.email}</Column>
+          </Row>
         </NavListItem>
         {privateInformation &&
           privateInformation.map((privateField) => (
