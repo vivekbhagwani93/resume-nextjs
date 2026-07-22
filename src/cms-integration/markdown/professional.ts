@@ -47,7 +47,7 @@ export const getProfessionalExperiences = async (): Promise<
       );
       invariant(attributes?.title, `${filename} missing "title" attribute.`);
 
-      const html = marked(body);
+      const html = marked.parse(body, { async: false });
 
       return {
         attributes,

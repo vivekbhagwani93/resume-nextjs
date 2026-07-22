@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`<ResumeLayout /> Matches the snapshot 1`] = `
 <div>
@@ -29,8 +29,9 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
           class="Column_columnStyle__1y78ssd0 Column_xsColumnsStyle_12__1y78ssdc Column_smColumnsStyle_12__1y78ssdp Column_mdColumnsStyle_auto__1y78ssd13 sprinkles_paddingTop_4_xs__1pzb2zolc sprinkles_paddingTop_0_md__1pzb2zokq"
         >
           <a
-            class="Button_buttonBaseStyle__105ch171 borderRadius_rounded__1ilbsqa0 Button__105ch170 sprinkles_paddingLeft_4_xs__1pzb2zoh0 sprinkles_paddingRight_4_xs__1pzb2zoj6 sprinkles_paddingTop_2_xs__1pzb2zol0 sprinkles_paddingBottom_2_xs__1pzb2zoei Button_buttonStyle_color_medium__105ch175 Button_buttonStyle_size_lg__105ch178"
+            class="Button__105ch172 Button_buttonBaseStyle__105ch171 borderRadius_rounded__1ilbsqa0 Button__105ch170 sprinkles_paddingLeft_4_xs__1pzb2zoh0 sprinkles_paddingRight_4_xs__1pzb2zoj6 sprinkles_paddingTop_2_xs__1pzb2zol0 sprinkles_paddingBottom_2_xs__1pzb2zoei Button_buttonStyle_color_medium__105ch176 Button_buttonStyle_size_lg__105ch179"
             href="/api/pdf"
+            rel="noreferrer"
             target="_blank"
           >
             <svg
@@ -38,13 +39,11 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
               class="svg-inline--fa fa-file-pdf sprinkles_marginRight_2_xs__1pzb2zo80"
               data-icon="file-pdf"
               data-prefix="fas"
-              focusable="false"
               role="img"
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
             >
               <path
-                d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z"
+                d="M96 0C60.7 0 32 28.7 32 64l0 384c0 35.3 28.7 64 64 64l80 0 0-112c0-35.3 28.7-64 64-64l176 0 0-165.5c0-17-6.7-33.3-18.7-45.3L290.7 18.7C278.7 6.7 262.5 0 245.5 0L96 0zM357.5 176L264 176c-13.3 0-24-10.7-24-24L240 58.5 357.5 176zM240 380c-11 0-20 9-20 20l0 128c0 11 9 20 20 20s20-9 20-20l0-28 12 0c33.1 0 60-26.9 60-60s-26.9-60-60-60l-32 0zm32 80l-12 0 0-40 12 0c11 0 20 9 20 20s-9 20-20 20zm96-80c-11 0-20 9-20 20l0 128c0 11 9 20 20 20l32 0c28.7 0 52-23.3 52-52l0-64c0-28.7-23.3-52-52-52l-32 0zm20 128l0-88 12 0c6.6 0 12 5.4 12 12l0 64c0 6.6-5.4 12-12 12l-12 0zm88-108l0 128c0 11 9 20 20 20s20-9 20-20l0-44 28 0c11 0 20-9 20-20s-9-20-20-20l-28 0 0-24 28 0c11 0 20-9 20-20s-9-20-20-20l-48 0c-11 0-20 9-20 20z"
                 fill="currentColor"
               />
             </svg>
@@ -77,31 +76,27 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-circle "
+                  class="svg-inline--fa fa-circle"
                   color="#18181b"
                   data-icon="circle"
                   data-prefix="fas"
-                  focusable="false"
                   role="img"
                   viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                    d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"
                     fill="currentColor"
                   />
                 </svg>
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-user "
+                  class="svg-inline--fa fa-user"
                   color="#ffffff"
                   data-icon="user"
                   data-prefix="fas"
-                  focusable="false"
                   role="img"
                   style="transform-origin: 0.4375em 0.5em;"
                   viewBox="0 0 448 512"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g
                     transform="translate(224 256)"
@@ -110,7 +105,7 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
                       transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)"
                     >
                       <path
-                        d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
+                        d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"
                         fill="currentColor"
                         transform="translate(-224 -256)"
                       />
@@ -141,31 +136,27 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-circle "
+                  class="svg-inline--fa fa-circle"
                   color="#18181b"
                   data-icon="circle"
                   data-prefix="fas"
-                  focusable="false"
                   role="img"
                   viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                    d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"
                     fill="currentColor"
                   />
                 </svg>
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-id-card "
+                  class="svg-inline--fa fa-id-card"
                   color="#ffffff"
                   data-icon="id-card"
                   data-prefix="fas"
-                  focusable="false"
                   role="img"
                   style="transform-origin: 0.5625em 0.5em;"
                   viewBox="0 0 576 512"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g
                     transform="translate(288 256)"
@@ -174,7 +165,7 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
                       transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)"
                     >
                       <path
-                        d="M528 32h-480C21.49 32 0 53.49 0 80V96h576V80C576 53.49 554.5 32 528 32zM0 432C0 458.5 21.49 480 48 480h480c26.51 0 48-21.49 48-48V128H0V432zM368 192h128C504.8 192 512 199.2 512 208S504.8 224 496 224h-128C359.2 224 352 216.8 352 208S359.2 192 368 192zM368 256h128C504.8 256 512 263.2 512 272S504.8 288 496 288h-128C359.2 288 352 280.8 352 272S359.2 256 368 256zM368 320h128c8.836 0 16 7.164 16 16S504.8 352 496 352h-128c-8.836 0-16-7.164-16-16S359.2 320 368 320zM176 192c35.35 0 64 28.66 64 64s-28.65 64-64 64s-64-28.66-64-64S140.7 192 176 192zM112 352h128c26.51 0 48 21.49 48 48c0 8.836-7.164 16-16 16h-192C71.16 416 64 408.8 64 400C64 373.5 85.49 352 112 352z"
+                        d="M0 96C0 60.7 28.7 32 64 32l448 0c35.3 0 64 28.7 64 64L0 96zm0 48l576 0 0 272c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 144zM247.3 416c20.2 0 35.3-19.4 22.4-35-14.7-17.7-36.9-29-61.7-29l-64 0c-24.8 0-47 11.3-61.7 29-12.9 15.6 2.2 35 22.4 35l142.5 0zM176 312a56 56 0 1 0 0-112 56 56 0 1 0 0 112zM360 208c-13.3 0-24 10.7-24 24s10.7 24 24 24l112 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-112 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l112 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-112 0z"
                         fill="currentColor"
                         transform="translate(-288 -256)"
                       />
@@ -206,6 +197,38 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
                     Somewhere Only We Know
                   </div>
                 </div>
+                <div
+                  class="Row_rowStyle__p6dtm90"
+                >
+                  <div
+                    class="Column_columnStyle__1y78ssd0 Column_xsColumnsStyle_auto__1y78ssdd"
+                  >
+                    <strong>
+                      Phone:
+                    </strong>
+                  </div>
+                  <div
+                    class="Column_columnStyle__1y78ssd0"
+                  >
+                    +12 3456 7890 12
+                  </div>
+                </div>
+                <div
+                  class="Row_rowStyle__p6dtm90"
+                >
+                  <div
+                    class="Column_columnStyle__1y78ssd0 Column_xsColumnsStyle_auto__1y78ssdd"
+                  >
+                    <strong>
+                      Email:
+                    </strong>
+                  </div>
+                  <div
+                    class="Column_columnStyle__1y78ssd0"
+                  >
+                    abc@d.ef
+                  </div>
+                </div>
               </li>
             </ul>
           </article>
@@ -222,31 +245,27 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-circle "
+              class="svg-inline--fa fa-circle"
               color="#18181b"
               data-icon="circle"
               data-prefix="fas"
-              focusable="false"
               role="img"
               viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"
                 fill="currentColor"
               />
             </svg>
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-check "
+              class="svg-inline--fa fa-check"
               color="#ffffff"
               data-icon="check"
               data-prefix="fas"
-              focusable="false"
               role="img"
               style="transform-origin: 0.4375em 0.5em;"
               viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 transform="translate(224 256)"
@@ -255,7 +274,7 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
                   transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)"
                 >
                   <path
-                    d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"
+                    d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"
                     fill="currentColor"
                     transform="translate(-224 -256)"
                   />
@@ -277,17 +296,15 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
               <span>
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-star fa-sm "
+                  class="svg-inline--fa fa-star fa-sm"
                   color="#ecc94b"
                   data-icon="star"
                   data-prefix="fas"
-                  focusable="false"
                   role="img"
                   viewBox="0 0 576 512"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
                     fill="currentColor"
                   />
                 </svg>
@@ -322,31 +339,27 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-circle "
+              class="svg-inline--fa fa-circle"
               color="#18181b"
               data-icon="circle"
               data-prefix="fas"
-              focusable="false"
               role="img"
               viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"
                 fill="currentColor"
               />
             </svg>
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-briefcase "
+              class="svg-inline--fa fa-briefcase"
               color="#ffffff"
               data-icon="briefcase"
               data-prefix="fas"
-              focusable="false"
               role="img"
               style="transform-origin: 0.5em 0.5em;"
               viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 transform="translate(256 256)"
@@ -355,7 +368,7 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
                   transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)"
                 >
                   <path
-                    d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"
+                    d="M200 48l112 0c4.4 0 8 3.6 8 8l0 40-128 0 0-40c0-4.4 3.6-8 8-8zm-56 8l0 40-80 0C28.7 96 0 124.7 0 160l0 96 512 0 0-96c0-35.3-28.7-64-64-64l-80 0 0-40c0-30.9-25.1-56-56-56L200 0c-30.9 0-56 25.1-56 56zM512 304l-192 0 0 16c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-16-192 0 0 112c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-112z"
                     fill="currentColor"
                     transform="translate(-256 -256)"
                   />
@@ -387,13 +400,11 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
             class="svg-inline--fa fa-calendar sprinkles_marginRight_2_xs__1pzb2zo80"
             data-icon="calendar"
             data-prefix="far"
-            focusable="false"
             role="img"
             viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"
+              d="M120 0c13.3 0 24 10.7 24 24l0 40 160 0 0-40c0-13.3 10.7-24 24-24s24 10.7 24 24l0 40 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-40c0-13.3 10.7-24 24-24zm0 112l-56 0c-8.8 0-16 7.2-16 16l0 48 352 0 0-48c0-8.8-7.2-16-16-16l-264 0zM48 224l0 192c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-192-352 0z"
               fill="currentColor"
             />
           </svg>
@@ -428,42 +439,38 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-circle "
+              class="svg-inline--fa fa-circle"
               color="#18181b"
               data-icon="circle"
               data-prefix="fas"
-              focusable="false"
               role="img"
               viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"
                 fill="currentColor"
               />
             </svg>
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-graduation-cap "
+              class="svg-inline--fa fa-graduation-cap"
               color="#ffffff"
               data-icon="graduation-cap"
               data-prefix="fas"
-              focusable="false"
               role="img"
-              style="transform-origin: 0.625em 0.5em;"
-              viewBox="0 0 640 512"
-              xmlns="http://www.w3.org/2000/svg"
+              style="transform-origin: 0.5625em 0.5em;"
+              viewBox="0 0 576 512"
             >
               <g
-                transform="translate(320 256)"
+                transform="translate(288 256)"
               >
                 <g
                   transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)"
                 >
                   <path
-                    d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"
+                    d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z"
                     fill="currentColor"
-                    transform="translate(-320 -256)"
+                    transform="translate(-288 -256)"
                   />
                 </g>
               </g>
@@ -486,13 +493,11 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
             class="svg-inline--fa fa-building-columns sprinkles_marginRight_2_xs__1pzb2zo80"
             data-icon="building-columns"
             data-prefix="fas"
-            focusable="false"
             role="img"
             viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M243.4 2.587C251.4-.8625 260.6-.8625 268.6 2.587L492.6 98.59C506.6 104.6 514.4 119.6 511.3 134.4C508.3 149.3 495.2 159.1 479.1 160V168C479.1 181.3 469.3 192 455.1 192H55.1C42.74 192 31.1 181.3 31.1 168V160C16.81 159.1 3.708 149.3 .6528 134.4C-2.402 119.6 5.429 104.6 19.39 98.59L243.4 2.587zM256 128C273.7 128 288 113.7 288 96C288 78.33 273.7 64 256 64C238.3 64 224 78.33 224 96C224 113.7 238.3 128 256 128zM127.1 416H167.1V224H231.1V416H280V224H344V416H384V224H448V420.3C448.6 420.6 449.2 420.1 449.8 421.4L497.8 453.4C509.5 461.2 514.7 475.8 510.6 489.3C506.5 502.8 494.1 512 480 512H31.1C17.9 512 5.458 502.8 1.372 489.3C-2.715 475.8 2.515 461.2 14.25 453.4L62.25 421.4C62.82 420.1 63.41 420.6 63.1 420.3V224H127.1V416z"
+              d="M271.9 20.2c-9.8-5.6-21.9-5.6-31.8 0l-224 128c-12.6 7.2-18.8 22-15.1 36S17.5 208 32 208l32 0 0 208 0 0-51.2 38.4C4.7 460.4 0 469.9 0 480 0 497.7 14.3 512 32 512l448 0c17.7 0 32-14.3 32-32 0-10.1-4.7-19.6-12.8-25.6l-51.2-38.4 0-208 32 0c14.5 0 27.2-9.8 30.9-23.8s-2.5-28.8-15.1-36l-224-128zM400 208l0 208-64 0 0-208 64 0zm-112 0l0 208-64 0 0-208 64 0zm-112 0l0 208-64 0 0-208 64 0zM256 96a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
               fill="currentColor"
             />
           </svg>
@@ -521,31 +526,27 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-circle "
+              class="svg-inline--fa fa-circle"
               color="#18181b"
               data-icon="circle"
               data-prefix="fas"
-              focusable="false"
               role="img"
               viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"
                 fill="currentColor"
               />
             </svg>
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-dice-d20 "
+              class="svg-inline--fa fa-dice-d20"
               color="#ffffff"
               data-icon="dice-d20"
               data-prefix="fas"
-              focusable="false"
               role="img"
               style="transform-origin: 0.5em 0.5em;"
               viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 transform="translate(256 256)"
@@ -554,7 +555,7 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
                   transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)"
                 >
                   <path
-                    d="M20.04 317.3C18 317.3 16 315.8 16 313.3V150.5c0-2.351 1.91-4.012 4.001-4.012c.6882 0 1.396 .18 2.062 .5748l76.62 45.1l-75.28 122.3C22.59 316.8 21.31 317.3 20.04 317.3zM231.4 405.2l-208.2-22.06c-4.27-.4821-7.123-4.117-7.123-7.995c0-1.401 .3725-2.834 1.185-4.161L122.7 215.1L231.4 405.2zM31.1 420.1c0-2.039 1.508-4.068 3.93-4.068c.1654 0 .3351 .0095 .5089 .0291l203.6 22.31v65.66C239.1 508.6 236.2 512 232 512c-1.113 0-2.255-.2387-3.363-.7565L34.25 423.6C32.69 422.8 31.1 421.4 31.1 420.1zM33.94 117.1c-1.289-.7641-1.938-2.088-1.938-3.417c0-1.281 .6019-2.567 1.813-3.364l150.8-98.59C185.1 10.98 187.3 10.64 188.6 10.64c4.32 0 8.003 3.721 8.003 8.022c0 1.379-.3788 2.818-1.237 4.214L115.5 165.8L33.94 117.1zM146.8 175.1l95.59-168.4C245.5 2.53 250.7 0 255.1 0s10.5 2.53 13.62 7.624l95.59 168.4H146.8zM356.4 207.1l-100.4 175.7L155.6 207.1H356.4zM476.1 415.1c2.422 0 3.93 2.029 3.93 4.068c0 1.378-.6893 2.761-2.252 3.524l-194.4 87.66c-1.103 .5092-2.241 .7443-3.35 .7443c-4.2 0-7.994-3.371-7.994-7.994v-65.69l203.6-22.28C475.7 416 475.9 415.1 476.1 415.1zM494.8 370.9C495.6 372.3 496 373.7 496 375.1c0 3.872-2.841 7.499-7.128 7.98l-208.2 22.06l108.6-190.1L494.8 370.9zM316.6 22.87c-.8581-1.395-1.237-2.834-1.237-4.214c0-4.301 3.683-8.022 8.003-8.022c1.308 0 2.675 .3411 4.015 1.11l150.8 98.59c1.211 .7973 1.813 2.076 1.813 3.353c0 1.325-.6488 2.649-1.938 3.429L396.5 165.8L316.6 22.87zM491.1 146.5c2.091 0 4.001 1.661 4.001 4.012v162.8c0 2.483-2.016 4.006-4.053 4.006c-1.27 0-2.549-.5919-3.353-1.912l-75.28-122.3l76.62-45.1C490.6 146.7 491.3 146.5 491.1 146.5z"
+                    d="M224.4-8.2c19.6-11.1 43.6-11.1 63.1 0l192 108.8c20 11.4 32.4 32.6 32.4 55.7l0 215.6c0 23-12.4 44.3-32.4 55.7l-192 108.8c-19.6 11.1-43.6 11.1-63.1 0L32.4 427.5C12.4 416.1 0 394.8 0 371.8L0 156.2c0-23 12.4-44.3 32.4-55.7L224.4-8.2zm52 73.2C267 49.8 245 49.8 235.6 65l-76.6 123.7-85.4-46.3-3.8-1.6c-8.9-2.7-18.8 1.1-23.4 9.6s-2.4 18.9 4.7 24.8l3.3 2.3 83.4 45.2-74.6 120.6C55.3 356.2 61 373 75 378.4l161 61.9 0 39.7c0 11 9 20 20 20s20-9 20-20l0-39.7 161-61.9c14-5.4 19.7-22.2 11.8-35l-74.7-120.6 83.4-45.2c9.7-5.3 13.3-17.4 8.1-27.1s-17.4-13.3-27.1-8.1L353 188.7 276.4 65zm-47 329.9l-122-46.9 54.5-88.1 67.5 135zM404.6 348l-122 46.9 67.5-135 54.5 88.1zM319.3 232L256 358.6 192.7 232 319.3 232zM308 192l-104.1 0 52-84 52 84z"
                     fill="currentColor"
                     transform="translate(-256 -256)"
                   />
@@ -602,17 +603,15 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-circle "
+                class="svg-inline--fa fa-circle"
                 color="#0073e6"
                 data-icon="circle"
                 data-prefix="fas"
-                focusable="false"
                 role="img"
                 viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                  d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"
                   fill="currentColor"
                 />
               </svg>
@@ -624,7 +623,7 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
         class="sprinkles_marginTop_4_xs__1pzb2zoai"
       >
         Copyright ©
-        2022
+        2026
          
         Some Body
       </div>

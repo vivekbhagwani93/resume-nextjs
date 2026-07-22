@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "resume-nextjs-dev",
+      "runtimeExecutable": "/Users/vivek/.nvm/versions/node/v24.18.0/bin/npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
+    }
+  ]
+}

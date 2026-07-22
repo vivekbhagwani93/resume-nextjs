@@ -15,7 +15,13 @@ module.exports = {
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
+    '^.+\\.(js|jsx|ts|tsx)$': [
+      'babel-jest',
+      {
+        presets: ['next/babel'],
+        plugins: ['@vanilla-extract/babel-plugin'],
+      },
+    ],
   },
   transformIgnorePatterns: ['/node_modules/'],
 };

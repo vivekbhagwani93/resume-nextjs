@@ -36,7 +36,7 @@ export const getPrivateInformation = async (): Promise<
 
       invariant(attributes?.label, `${filename} missing "label" attribute.`);
 
-      const html = marked(body);
+      const html = marked.parse(body, { async: false });
 
       return {
         attributes,

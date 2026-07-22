@@ -10,7 +10,6 @@ import {
 } from '@react-pdf/renderer';
 import React from 'react';
 import Html from 'react-pdf-html';
-import { HtmlProps } from 'react-pdf-html/dist/Html';
 import { getFullName } from '../../helpers/utils';
 import { ResumePageProps } from '../../pages';
 import colors from '../../strum-design-system/themes/timbre/colors';
@@ -174,7 +173,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const htmlProps: Omit<HtmlProps, 'children'> = {
+const htmlProps: Omit<React.ComponentProps<typeof Html>, 'children'> = {
   style: { fontSize: fontSizes.xxs },
   stylesheet: {
     a: styles.a,
