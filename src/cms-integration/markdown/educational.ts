@@ -49,7 +49,7 @@ export const getEducationalExperiences = async (): Promise<
         `${filename} missing "institution" attribute.`,
       );
 
-      const html = marked(body);
+      const html = marked.parse(body, { async: false });
 
       return {
         attributes,

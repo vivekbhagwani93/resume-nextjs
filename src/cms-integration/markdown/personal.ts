@@ -40,7 +40,7 @@ export const getPersonalInformation =
       'personal.md missing "givenName" attribute.',
     );
 
-    const html = marked(body);
+    const html = marked.parse(body, { async: false });
 
     return {
       attributes,

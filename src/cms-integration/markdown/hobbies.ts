@@ -12,7 +12,7 @@ const hobbiesPath = path.join(basePath, 'edit-me', 'cms', 'hobbies.md');
 export const getHobbies = async (): Promise<CMSHobbies> => {
   const file = await fs.readFile(hobbiesPath);
 
-  const html = marked(file.toString());
+  const html = marked.parse(file.toString(), { async: false });
 
   return {
     html,

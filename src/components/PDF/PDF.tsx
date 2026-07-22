@@ -10,7 +10,6 @@ import {
 } from '@react-pdf/renderer';
 import React from 'react';
 import Html from 'react-pdf-html';
-import { HtmlProps } from 'react-pdf-html/dist/Html';
 import { getFullName } from '../../helpers/utils';
 import { ResumePageProps } from '../../pages';
 import colors from '../../strum-design-system/themes/timbre/colors';
@@ -78,7 +77,7 @@ const styles = StyleSheet.create({
     flexBasis: `${sidebarWidth}in`,
     flexDirection: 'column',
     flexGrow: 0,
-    flexShrink: 1,
+    flexShrink: 0,
   },
   sidebarContent: { padding: spacers[4] },
   header: {
@@ -87,15 +86,16 @@ const styles = StyleSheet.create({
     padding: `${spacers[6]} ${spacers[4]}`,
     textAlign: 'center',
   },
-  headerTitle: { fontSize: fontSizes.xl, fontWeight: 700 },
-  headerSubtitle: { fontSize: fontSizes.l, fontWeight: 700 },
+  headerTitle: { fontSize: fontSizes.xl, fontWeight: 700, lineHeight: 1.3 },
+  headerSubtitle: { fontSize: fontSizes.l, fontWeight: 700, lineHeight: 1.3 },
   main: {
     alignSelf: 'stretch',
     display: 'flex',
-    flexBasis: 'auto',
+    flexBasis: 0,
     flexDirection: 'column',
     flexGrow: 1,
-    flexShrink: 0,
+    flexShrink: 1,
+    minWidth: 0,
     padding: spacers[4],
   },
   section: { marginBottom: spacers[4] },
@@ -158,7 +158,9 @@ const styles = StyleSheet.create({
     borderRadius: '3px',
     color: colors.white,
     fontWeight: 700,
+    lineHeight: 1,
     paddingHorizontal: spacers[1],
+    paddingVertical: 2,
   },
   bold: { fontWeight: 700 },
   flexColumn: { display: 'flex', flexDirection: 'column' },
@@ -174,7 +176,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const htmlProps: Omit<HtmlProps, 'children'> = {
+const htmlProps: Omit<React.ComponentProps<typeof Html>, 'children'> = {
   style: { fontSize: fontSizes.xxs },
   stylesheet: {
     a: styles.a,

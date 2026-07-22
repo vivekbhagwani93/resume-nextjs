@@ -28,6 +28,7 @@ const Modal: React.FC<PropsWithChildren<any>> = (props) => {
   const { children } = props;
   const { isOpen, toggle } = useContext(ModalContext);
   const menuRef = useRef(null);
+  const overlayRef = useRef(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -46,13 +47,23 @@ const Modal: React.FC<PropsWithChildren<any>> = (props) => {
 
   return (
     <>
-      <Transition in={isOpen} timeout={modalDuration} unmountOnExit>
+      <Transition
+        in={isOpen}
+        nodeRef={overlayRef}
+        timeout={modalDuration}
+        unmountOnExit
+      >
         {(state) => {
-          return <div className={overlayStyle[state]} />;
+          return <div ref={overlayRef} className={overlayStyle[state]} />;
         }}
       </Transition>
 
-      <Transition in={isOpen} timeout={modalDuration} unmountOnExit>
+      <Transition
+        in={isOpen}
+        nodeRef={menuRef}
+        timeout={modalDuration}
+        unmountOnExit
+      >
         {(state) => {
           return (
             <div onKeyDown={onKeyDown} ref={menuRef} tabIndex={0}>

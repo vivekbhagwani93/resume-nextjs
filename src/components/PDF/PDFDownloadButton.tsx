@@ -14,13 +14,13 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = (props) => {
   const darkMode = usePrefersDarkMode();
 
   return (
-    // eslint-disable-next-line react/jsx-no-target-blank
     <a
       className={buttonStyle({
         color: darkMode ? 'primary' : 'medium',
         size: 'lg',
       })}
       href={secret ? `/api/pdf?secret=${secret}` : '/api/pdf'}
+      rel="noreferrer"
       target="_blank"
     >
       <FontAwesomeIcon className={atoms({ marginRight: 2 })} icon={faFilePdf} />
