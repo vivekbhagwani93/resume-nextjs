@@ -13,6 +13,7 @@ export interface ProfessionalExperienceMarkdownAttributes {
 
 export interface CMSProfessionalExperience {
   attributes: ProfessionalExperienceMarkdownAttributes;
+  body: string;
   html: string;
   slug: string;
 }
@@ -51,6 +52,7 @@ export const getProfessionalExperiences = async (): Promise<
 
       return {
         attributes,
+        body,
         html,
         slug: filename.replace(/\.md$/, ''),
       };

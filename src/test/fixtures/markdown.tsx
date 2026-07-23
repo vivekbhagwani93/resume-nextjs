@@ -12,6 +12,7 @@ export const educationalExperiences: CMSEducationalExperience[] = [
       completionYear: '2010',
       institution: 'Test School',
     },
+    body: 'Test body',
     html: '<div>Test</div>',
     slug: 'test',
   },
@@ -34,6 +35,7 @@ export const personalInformation: CMSPersonalInformation = {
     email: 'abc@d.ef',
     location: 'Somewhere Only We Know',
   },
+  body: 'Test body',
   html: '<div>Test</div>',
 };
 
@@ -45,6 +47,7 @@ export const professionalExperiences: CMSProfessionalExperience[] = [
       title: 'My Title',
       startDate: '2018-02-15',
     },
+    body: 'Test body',
     html: '<div>Test</div>',
     slug: 'test',
   },
@@ -55,9 +58,10 @@ export const skills: CMSSkillCategory[] = [
     attributes: {
       title: 'Proficient',
     },
+    body: 'Test body',
     html: '<div>Test</div>',
     slug: 'test',
   },
 ];
 
-export const hobbies: CMSHobbies = { html: '<div>Test</div>' };
+export const hobbies: CMSHobbies = { body: 'Test body', html: '<div>Test</div>' };

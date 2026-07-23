@@ -10,6 +10,7 @@ export interface SkillsMarkdownAttributes {
 
 export interface CMSSkillCategory {
   attributes: SkillsMarkdownAttributes;
+  body: string;
   html: string;
   slug: string;
 }
@@ -33,6 +34,7 @@ export const getSkillCategories = async (): Promise<CMSSkillCategory[]> => {
 
       return {
         attributes,
+        body,
         html,
         slug: filename.replace(/\.md$/, ''),
       };

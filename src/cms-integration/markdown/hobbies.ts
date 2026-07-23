@@ -3,6 +3,7 @@ import { marked } from 'marked';
 import path from 'path';
 
 export interface CMSHobbies {
+  body: string;
   html: string;
 }
 
@@ -15,6 +16,7 @@ export const getHobbies = async (): Promise<CMSHobbies> => {
   const html = marked.parse(file.toString(), { async: false });
 
   return {
+    body: file.toString(),
     html,
   };
 };

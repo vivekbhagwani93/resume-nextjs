@@ -12,6 +12,7 @@ export interface EducationalExperienceMarkdownAttributes {
 
 export interface CMSEducationalExperience {
   attributes: EducationalExperienceMarkdownAttributes;
+  body: string;
   html: string;
   slug: string;
 }
@@ -53,6 +54,7 @@ export const getEducationalExperiences = async (): Promise<
 
       return {
         attributes,
+        body,
         html,
         slug: filename.replace(/\.md$/, ''),
       };

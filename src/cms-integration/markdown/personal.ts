@@ -16,6 +16,7 @@ export interface PersonalMarkdownAttributes {
 
 export interface CMSPersonalInformation {
   attributes: PersonalMarkdownAttributes;
+  body: string;
   html: string;
 }
 
@@ -44,6 +45,7 @@ export const getPersonalInformation =
 
     return {
       attributes,
+      body,
       html,
     };
   };
