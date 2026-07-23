@@ -4,7 +4,6 @@ startDate: June 2020
 endDate: April 2021
 title: Senior Frontend Engineer
 ---
-
 Tech stack used: 
 **Angular 9 - 12, Akita, ANT Design Library, Jest, Storybook, Webpack, TypeScript, Spring Boot, CAS**
 

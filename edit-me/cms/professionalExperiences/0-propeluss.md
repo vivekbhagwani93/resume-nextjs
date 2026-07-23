@@ -4,7 +4,6 @@ startDate: October 2017
 endDate: July 2018
 title: Software Engineer (Intern)
 ---
-
 Tech stack used: 
 **React, Redux, SASS, Jest, Webpack**
 

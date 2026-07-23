@@ -12,23 +12,13 @@ export const links: CMSLink[] = [
     title: 'GitHub',
   },
   {
-    href: 'https://www.instagram.com/vivekb176',
-    iconName: 'instagram',
-    title: 'Instagram',
-  },
-  {
     href: 'https://www.linkedin.com/in/vivekbhagwani/',
     iconName: 'linkedin',
     title: 'LinkedIn',
   },
-  // {
-  //   href: 'https://www.npmjs.com',
-  //   iconName: 'npm',
-  //   title: 'NPM',
-  // },
-  // {
-  //   href: 'https://twitter.com',
-  //   iconName: 'twitter',
-  //   title: 'Twitter',
-  // },
+  {
+    href: 'https://www.instagram.com/vivekb176',
+    iconName: 'instagram',
+    title: 'Instagram',
+  },
 ];

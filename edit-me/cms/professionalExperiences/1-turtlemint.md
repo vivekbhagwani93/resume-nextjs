@@ -4,7 +4,6 @@ title: Software Engineer
 startDate: July 2018
 endDate: April 2020
 ---
-
 Tech stack used: 
 **Angular 1, React, Redux, Material Design, ANT Design Library, Jest, Storybook, Webpack, TypeScript**
 

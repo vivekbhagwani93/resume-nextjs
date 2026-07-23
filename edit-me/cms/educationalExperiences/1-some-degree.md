@@ -3,7 +3,6 @@ achievement: Bachelors' in Engineering (BE), Electronics Design
 completionYear: 2015
 institution: SRCOEM, Nagpur, Maharashtra, India
 ---
-
 Completed my four-year college degree in 
 Electronics Design and Instrumentation Engineering 
 

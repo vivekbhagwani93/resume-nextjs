@@ -4,7 +4,6 @@ startDate: July 2021
 endDate: July 2022
 title: Sr Frontend Engineer
 ---
-
 Tech stack used: 
 **React 15, Redux, TypeScript, Angular 11, Jest, Webpack, Spring Boot**
 

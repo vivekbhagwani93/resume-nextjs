@@ -1,10 +1,8 @@
 ---
 organization: Recordbay GmbH, Germany
 startDate: July 2022
-endDate: 
 title: Sr Software Engineer (Contract)
 ---
-
 Tech stack used: 
 **React 16 - 17, TypeScript, Redux, GraphQL, Apollo Client, Jest, Storybook, Webpack**
 
