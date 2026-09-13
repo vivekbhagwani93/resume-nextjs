@@ -604,7 +604,7 @@ exports[`<ResumeLayout /> Matches the snapshot 1`] = `
               <svg
                 aria-hidden="true"
                 class="svg-inline--fa fa-circle"
-                color="#0073e6"
+                color="#15599e"
                 data-icon="circle"
                 data-prefix="fas"
                 role="img"
