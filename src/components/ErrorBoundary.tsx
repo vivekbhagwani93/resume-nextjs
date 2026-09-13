@@ -9,16 +9,16 @@ interface State {
 }
 
 class ErrorBoundary extends React.Component<any, State> {
-  constructor(props) {
+  constructor(props: any) {
     super(props);
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(_error: any) {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: any, errorInfo: any) {
     // log to your reporting service
     console.error(error, errorInfo);
   }

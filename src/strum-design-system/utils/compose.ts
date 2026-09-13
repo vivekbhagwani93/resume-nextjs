@@ -2,8 +2,22 @@ import { atoms, Atoms } from '../sprinkles.css';
 
 type Style = string | number;
 
-export const composeStyles = (...args: Array<Style>) => {
-  const classes = [];
+/** Falsy entries are filtered out, so callers may pass optional styles. */
+type OptionalStyle = Style | undefined | null | false;
+
+type ColorTransform = (color: string) => string;
+
+/**
+ * Look up a style by a key that may be undefined (e.g. an optional prop or an
+ * unset responsive breakpoint), without indexing the map with `undefined`.
+ */
+export const styleFor = <T extends Record<string, Style>>(
+  styles: T,
+  key: keyof T | undefined,
+): T[keyof T] | undefined => (key === undefined ? undefined : styles[key]);
+
+export const composeStyles = (...args: Array<OptionalStyle>) => {
+  const classes: Array<Style> = [];
 
   args.forEach((arg) => {
     if (arg) {
@@ -15,8 +29,8 @@ export const composeStyles = (...args: Array<Style>) => {
 };
 
 export const composeWithAtoms = (
-  atomicProperties: Atoms,
-  ...args: Array<Style>
+  atomicProperties: Atoms | undefined,
+  ...args: Array<OptionalStyle>
 ): string => {
   if (!atomicProperties) return composeStyles(...args);
 
@@ -24,6 +38,6 @@ export const composeWithAtoms = (
 };
 
 export const compose =
-  (...functions) =>
-  (args) =>
-    functions.reduceRight((arg, fn) => fn(arg), args);
+  (...functions: Array<ColorTransform>): ColorTransform =>
+  (args: string) =>
+    functions.reduceRight<string>((arg, fn) => fn(arg), args);

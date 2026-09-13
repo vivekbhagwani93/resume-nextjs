@@ -10,7 +10,7 @@ export interface PersonalMarkdownAttributes {
   email: string;
   familyName: string;
   givenName: string;
-  title?: string;
+  title: string;
   twitterUsername?: string;
 }
 
@@ -40,6 +40,7 @@ export const getPersonalInformation =
       attributes.givenName,
       'personal.md missing "givenName" attribute.',
     );
+    invariant(attributes.title, 'personal.md missing "title" attribute.');
 
     const html = marked.parse(body, { async: false });
 

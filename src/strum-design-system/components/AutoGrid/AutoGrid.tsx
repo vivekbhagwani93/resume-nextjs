@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import { Atoms } from '../../sprinkles.css';
 import spacers from '../../themes/timbre/spacers';
-import { composeWithAtoms } from '../../utils/compose';
+import { composeWithAtoms, styleFor } from '../../utils/compose';
 import {
   autoGridLGColumnsStyle,
   autoGridMDColumnsStyle,
@@ -40,16 +40,16 @@ const AutoGrid: React.FC<PropsWithChildren<AutoGrid>> = (props) => {
   const classes = composeWithAtoms(
     atomicProperties,
     autoGridStyle({
-      height: equalHeight ? 'equal' : null,
+      height: equalHeight ? 'equal' : undefined,
       horizontalAlign,
       verticalAlign,
     }),
-    autoGridXSColumnsStyle[columns?.xs],
-    autoGridSMColumnsStyle[columns?.sm],
-    autoGridMDColumnsStyle[columns?.md],
-    autoGridLGColumnsStyle[columns?.lg],
-    autoGridXLColumnsStyle[columns?.xl],
-    autoGridXXLColumnsStyle[columns?.xxl],
+    styleFor(autoGridXSColumnsStyle, columns?.xs),
+    styleFor(autoGridSMColumnsStyle, columns?.sm),
+    styleFor(autoGridMDColumnsStyle, columns?.md),
+    styleFor(autoGridLGColumnsStyle, columns?.lg),
+    styleFor(autoGridXLColumnsStyle, columns?.xl),
+    styleFor(autoGridXXLColumnsStyle, columns?.xxl),
     autoGridXGuttersStyle[guttersX],
     autoGridYGuttersStyle[guttersY],
   );

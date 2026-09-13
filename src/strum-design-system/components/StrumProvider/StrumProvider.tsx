@@ -36,7 +36,7 @@ const StrumProvider: React.FC<PropsWithChildren<StrumProviderProps>> = (
   return (
     <>
       <StrumContext.Provider value={{ colorScheme, theme }}>
-        <div className={theme}>{children}</div>
+        <div className={theme ?? undefined}>{children}</div>
       </StrumContext.Provider>
     </>
   );

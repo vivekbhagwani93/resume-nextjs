@@ -2,7 +2,19 @@ import { darken, lighten } from 'polished';
 import { getContrastingColor } from '../utils/contrast';
 import { vars } from './contract.css';
 
-export const generateContrastColors = (colors) => ({
+export interface ThemeColors {
+  black: string;
+  dark: string;
+  green: string;
+  light: string;
+  medium: string;
+  primary: string;
+  red: string;
+  white: string;
+  yellow: string;
+}
+
+export const generateContrastColors = (colors: ThemeColors) => ({
   black: getContrastingColor(colors.black),
   dark: getContrastingColor(colors.dark),
   green: getContrastingColor(colors.green),
@@ -14,7 +26,7 @@ export const generateContrastColors = (colors) => ({
   yellow: getContrastingColor(colors.yellow),
 });
 
-export const generateDarkenedColors = (colors) => ({
+export const generateDarkenedColors = (colors: ThemeColors) => ({
   black: darken(0.1, colors.black),
   dark: darken(0.1, colors.dark),
   green: darken(0.1, colors.green),
@@ -26,7 +38,7 @@ export const generateDarkenedColors = (colors) => ({
   yellow: darken(0.1, colors.yellow),
 });
 
-export const generateLightenedColors = (colors) => ({
+export const generateLightenedColors = (colors: ThemeColors) => ({
   black: lighten(0.2, colors.black),
   dark: lighten(0.2, colors.dark),
   green: lighten(0.2, colors.green),

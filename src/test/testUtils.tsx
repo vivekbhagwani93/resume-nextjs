@@ -1,12 +1,14 @@
-import { render } from '@testing-library/react';
-import React, { PropsWithChildren } from 'react';
+import { render, RenderOptions } from '@testing-library/react';
+import React, { PropsWithChildren, ReactElement } from 'react';
 
-const Wrapper: React.FC<PropsWithChildren<any>> = ({ children }) => {
+const Wrapper: React.FC<PropsWithChildren<unknown>> = ({ children }) => {
   return <>{children}</>;
 };
 
-const customRender = (ui, options?) =>
-  render(ui, { wrapper: Wrapper, ...options });
+const customRender = (
+  ui: ReactElement,
+  options?: Omit<RenderOptions, 'wrapper'>,
+) => render(ui, { wrapper: Wrapper, ...options });
 
 export * from '@testing-library/react';
 export { customRender as render };

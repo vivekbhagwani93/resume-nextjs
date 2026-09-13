@@ -37,4 +37,4 @@ export const tagStyle = recipe({
   },
 });
 
-export type TagVariants = RecipeVariants<typeof tagStyle>;
+export type TagVariants = NonNullable<RecipeVariants<typeof tagStyle>>;

@@ -7,14 +7,14 @@ interface StrumContext {
   theme: string | null;
 }
 
-export const StrumContext = createContext<StrumContext>(null);
+export const StrumContext = createContext<StrumContext | null>(null);
 
 export const useStrumTheme = () => {
-  const { colorScheme, theme } = useContext(StrumContext);
+  const context = useContext(StrumContext);
 
-  if (theme === null) {
+  if (context === null || context.theme === null) {
     throw new Error('No Strum theme available on context');
   }
 
-  return { colorScheme, themeClass: theme, vars };
+  return { colorScheme: context.colorScheme, themeClass: context.theme, vars };
 };

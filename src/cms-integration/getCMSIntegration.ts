@@ -8,17 +8,18 @@ import { getSkillCategories } from './markdown/skills';
 type CMS = 'markdown';
 
 const getCMSIntegration = async (cms: CMS) => {
-  if (cms === 'markdown') {
-    return {
-      education: await getEducationalExperiences(),
-      hobbies: await getHobbies(),
-      links: await getLinks(),
-      personalInformation: await getPersonalInformation(),
-      professional: await getProfessionalExperiences(),
-      skills: await getSkillCategories(),
-    };
+  if (cms !== 'markdown') {
+    throw new Error(`Unsupported CMS integration: ${cms}`);
   }
-  return null;
+
+  return {
+    education: await getEducationalExperiences(),
+    hobbies: await getHobbies(),
+    links: await getLinks(),
+    personalInformation: await getPersonalInformation(),
+    professional: await getProfessionalExperiences(),
+    skills: await getSkillCategories(),
+  };
 };
 
 export default getCMSIntegration;

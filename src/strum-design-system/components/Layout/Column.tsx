@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { Atoms } from '../../sprinkles.css';
-import { composeWithAtoms } from '../../utils/compose';
+import { composeWithAtoms, styleFor } from '../../utils/compose';
 import {
   columnStyle,
   lgColumnsStyle,
@@ -22,12 +22,12 @@ const Column: React.FC<PropsWithChildren<Column>> = (props) => {
   const classes = composeWithAtoms(
     atomicProperties,
     columnStyle,
-    xsColumnsStyle[width?.xs],
-    smColumnsStyle[width?.sm],
-    mdColumnsStyle[width?.md],
-    lgColumnsStyle[width?.lg],
-    xlColumnsStyle[width?.xl],
-    xxlColumnsStyle[width?.xxl],
+    styleFor(xsColumnsStyle, width?.xs),
+    styleFor(smColumnsStyle, width?.sm),
+    styleFor(mdColumnsStyle, width?.md),
+    styleFor(lgColumnsStyle, width?.lg),
+    styleFor(xlColumnsStyle, width?.xl),
+    styleFor(xxlColumnsStyle, width?.xxl),
   );
 
   return <div className={classes}>{children}</div>;
