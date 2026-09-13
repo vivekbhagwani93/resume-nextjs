@@ -15,13 +15,10 @@ module.exports = {
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': [
-      'babel-jest',
-      {
-        presets: ['next/babel'],
-        plugins: ['@vanilla-extract/babel-plugin'],
-      },
-    ],
+    // Listed first so it wins over the generic rule below. Matches .css.tsx
+    // too — Heading.css.tsx and Display.css.tsx use the .tsx extension.
+    '\\.css\\.tsx?$': '@vanilla-extract/jest-transform',
+    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
   },
   transformIgnorePatterns: ['/node_modules/'],
 };
