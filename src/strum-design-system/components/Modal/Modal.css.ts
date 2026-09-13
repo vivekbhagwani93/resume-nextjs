@@ -20,6 +20,7 @@ export const overlayStyle = styleVariants({
   entering: [overlayBaseStyle, { opacity: 1 }, zIndex3],
   exited: [overlayBaseStyle, { opacity: 0 }, zIndex0],
   exiting: [overlayBaseStyle, { opacity: 0 }, zIndex3],
+  unmounted: [overlayBaseStyle, { opacity: 0 }, zIndex0],
 });
 
 export const closeStyle = style({
@@ -67,6 +68,7 @@ export const modalStyle = styleVariants({
       transition: `all ${modalDuration}ms cubic-bezier(0.25, 1, 0.6, 1)`,
     },
   ],
+  unmounted: [modalBaseStyle, { opacity: 0, transform: 'scale(0.8)' }],
 });
 
 export const modalHeaderStyle = style([

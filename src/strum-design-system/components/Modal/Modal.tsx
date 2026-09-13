@@ -24,22 +24,22 @@ export const ModalContext = createContext<{
   toggle: () => void;
 }>({ isOpen: false, toggle: () => null });
 
-const Modal: React.FC<PropsWithChildren<any>> = (props) => {
+const Modal: React.FC<PropsWithChildren<unknown>> = (props) => {
   const { children } = props;
   const { isOpen, toggle } = useContext(ModalContext);
-  const menuRef = useRef(null);
-  const overlayRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (isOpen) {
-      menuRef.current.focus({ preventScroll: true });
+      menuRef.current?.focus({ preventScroll: true });
       document.body.style.overflowY = 'hidden';
     } else {
-      document.body.style.overflowY = null;
+      document.body.style.overflowY = '';
     }
   }, [isOpen]);
 
-  const onKeyDown = (e) => {
+  const onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Escape' && isOpen) {
       toggle();
     }

@@ -51,4 +51,4 @@ export const alertStyle = recipe({
   },
 });
 
-export type AlertVariants = RecipeVariants<typeof alertStyle>;
+export type AlertVariants = NonNullable<RecipeVariants<typeof alertStyle>>;

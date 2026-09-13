@@ -1,0 +1,8 @@
+{
+  // Side-by-side TypeScript: `typescript` is aliased to @typescript/typescript6,
+  // whose lib/ has no tsserver.js. The real TS 6 language server lives in the
+  // @typescript/old dependency, so point the tsdk there for the classic server.
+  "typescript.tsdk": "node_modules/@typescript/old/lib",
+  "typescript.experimental.useTsgo": true,
+  "js/ts.experimental.useTsgo": true
+}

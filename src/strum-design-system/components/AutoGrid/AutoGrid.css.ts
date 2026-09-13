@@ -125,4 +125,4 @@ export const autoGridXXLColumnsStyle = styleVariants(
   ],
 );
 
-export type AutoGridVariants = RecipeVariants<typeof autoGridStyle>;
+export type AutoGridVariants = NonNullable<RecipeVariants<typeof autoGridStyle>>;

@@ -42,7 +42,7 @@ export const personalInformation: CMSPersonalInformation = {
 export const professionalExperiences: CMSProfessionalExperience[] = [
   {
     attributes: {
-      endDate: null,
+      endDate: undefined,
       organization: 'The Zebra',
       title: 'My Title',
       startDate: '2018-02-15',

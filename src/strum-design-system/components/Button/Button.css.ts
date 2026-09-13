@@ -122,4 +122,4 @@ export const buttonStyle = recipe({
   },
 });
 
-export type ButtonVariants = RecipeVariants<typeof buttonStyle>;
+export type ButtonVariants = NonNullable<RecipeVariants<typeof buttonStyle>>;

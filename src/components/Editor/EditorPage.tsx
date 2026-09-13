@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { useEditorPage } from './EditorContainer';
 import { sectionCardStyle } from './editorStyles';
@@ -77,9 +78,12 @@ const EditorPage: React.FC<EditorPageProps> = (props) => {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a href="/" style={{ textDecoration: 'none', color: '#0f172a', fontWeight: 700 }}>
+                <Link
+                  href="/"
+                  style={{ textDecoration: 'none', color: '#0f172a', fontWeight: 700 }}
+                >
                   Back to resume
-                </a>
+                </Link>
 
                 <label style={{ fontWeight: 600, display: 'grid', gap: '0.35rem' }}>
                   Accent color

@@ -6,15 +6,14 @@ import { getPrivateInformation } from '../../../cms-integration/markdown/private
 import ResumeLayout from '../../../components/ResumeLayout/ResumeLayout';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const {
-    params: { secret },
-    res,
-  } = ctx;
+  const { params, res } = ctx;
+  const secret = params?.secret;
   const privateKey = process.env.PRIVATE_KEY;
   if (secret !== privateKey) {
     res.writeHead(401);
     res.end('Not authorized');
-    return null;
+    // The response is already finished; Next just needs a valid return value.
+    return { props: {} };
   }
 
   const {

@@ -30,4 +30,4 @@ export const rowStyle = recipe({
   },
 });
 
-export type RowVariants = RecipeVariants<typeof rowStyle>;
+export type RowVariants = NonNullable<RecipeVariants<typeof rowStyle>>;
