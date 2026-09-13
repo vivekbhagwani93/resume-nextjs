@@ -20,6 +20,34 @@ Your résumé can also generate a secure URL that will display information not a
 - [Testing Library](https://testing-library.com/)
 - [Vercel](https://vercel.com/)
 
+### TypeScript: 6 and 7 side-by-side
+
+TypeScript 7 (the native compiler) is fast but doesn't yet expose the JS
+compiler API that `typescript-eslint` and Next.js's build-time type check both
+depend on. Until those land TS 7 support, this project installs both, using the
+[official side-by-side setup](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/):
+
+| Package | Alias for | Used by |
+| --- | --- | --- |
+| `typescript` | `@typescript/typescript6` | `next build`, `eslint` — anything that does `require('typescript')` |
+| `@typescript/native` | `typescript@7` | `npm run types` |
+
+```bash
+npm run types      # TS 7 native — fast, for local iteration
+npm run types:ts6  # TS 6 — matches what next build and eslint enforce
+```
+
+`npm run build` and `npm run lint` are unaffected: they resolve `typescript`,
+which is the TS 6 API. Both compilers currently report zero errors.
+
+Note that bare `tsc` resolves to TS 6, not 7 — `@typescript/typescript6` depends
+on `@typescript/old` (real `typescript@6`), whose `tsc` bin wins the
+`node_modules/.bin/tsc` link. That's why the `types` script calls the native
+binary by its explicit path. Use `tsc6` for the TS 6 CLI.
+
+Once Next.js and `typescript-eslint` support TS 7 (tracked for TS >= 7.1), this
+can collapse back to a single `typescript` dependency.
+
 ### It's FAST
 
 Your static generated site will load extremely quickly wherever you decide to deploy it, but it's built to deploy to Vercel with just one or two clicks. The screenshot here is from the very first Lighthouse test I ran on my own production deploy, using emulated mobile with "Slow 4G Throttling".
