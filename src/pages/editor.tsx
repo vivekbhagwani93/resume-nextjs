@@ -5,6 +5,10 @@ import EditorPage from '../components/Editor/EditorPage';
 import { EditorPageProps } from '../components/Editor/types';
 
 export const getServerSideProps: GetServerSideProps<EditorPageProps> = async () => {
+  if (process.env.NODE_ENV === 'production') {
+    return { notFound: true };
+  }
+
   const {
     education,
     hobbies,
